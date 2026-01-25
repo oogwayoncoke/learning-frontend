@@ -2,26 +2,4 @@
 
 This repository is a collection of my projects and exercises as I master JavaScript, CSS, and HTML.
 
-## 🎲 Featured Project: Dice Rolling Simulator
-A functional dice roller built to practice DOM manipulation and logic.
-
-### Features:
-* Random number generation (1-6).
-* Dynamic UI updates using **CSS Flexbox**.
-* Responsive design for mobile and desktop.
-
-### How to Run:
-1. Clone this repo.
-2. Open `index.html` in your browser.
-
----
-
-## 🛠️ Concepts Practiced
-* **JavaScript:** Event listeners, `Math.random()`, and functions.
-* **CSS:** Flexbox layouts and custom styling.
-* **HTML:** Semantic structure and container management.
-
-## 📈 Roadmap
-- [ ] Add animations to the dice roll.
-- [ ] Implement a "history" log of previous rolls.
-- [ ] Expand the temperature converter tool.
+🚀 FeaturesDice Simulation: Roll virtual dice with results displayed dynamically in the diceContainer.Temperature Conversion: \* Convert Fahrenheit ($°F$) to Celsius ($°C$).Convert Celsius ($°C$) to Fahrenheit ($°F$).Error Handling: Built-in validation to ensure a conversion type is selected before processing.🛠️ Built WithHTML5: Structure and layout.CSS3: Custom styling and responsive design.JavaScript (ES6+): Logic for dice randomization and mathematical conversions.📖 How to UseTo Roll Dice: Simply click the "Roll" button to see your result in the display area.To Convert Temperature:Enter a numerical value in the input field.Select your desired conversion direction.Click the conversion button to view the result.
