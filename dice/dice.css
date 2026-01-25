@@ -4,19 +4,41 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: -200px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 100vh;
+  margin: 0;
 }
+
 #controls {
   background-color: white;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
   width: 40%;
   padding: 20px;
   border-radius: 40px;
-  margin-top: 10%;
-  align-items: center;
   display: flex;
   justify-content: center;
+  align-items: center;
+  animation: slideIn 0.6s ease-out;
+  margin-bottom: 20px;
+}
+
+#dice-container {
+  background-color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+
+  /* These lines fix the horizontal growth */
+  width: auto;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  gap: 20px;
+  padding: 25px;
+  border: 2px solid #ccc;
+  align-items: center;
+  border-radius: 15px;
 }
 
 button {
@@ -25,33 +47,66 @@ button {
   color: white;
   background-color: blue;
   border-radius: 5px;
-  padding: auto;
+  padding: 10px 20px;
   margin: auto;
   display: block;
+  transition: all 0.2s ease;
 }
+
 button:hover {
   background-color: navy;
   cursor: pointer;
+  transform: translateY(-2px);
 }
-#dice-container {
-  background-color: white;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-  width: 15%;
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 20px;
-  padding: 15px;
-  border: 2px solid #ccc;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15px;
-}
+
 input {
-  width: 50%;
+  width: 50px;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+.die-wrapper {
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.die-img {
+  width: 80px;
+  height: 80px;
+}
+
+.die-shaking {
+  animation: roll 0.1s infinite;
+  filter: blur(1px);
+}
+
+@keyframes roll {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  25% {
+    transform: translate(-1px, -2px) rotate(-5deg);
+  }
+  50% {
+    transform: translate(-2px, 0px) rotate(5deg);
+  }
+  75% {
+    transform: translate(2px, 1px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(1px, -1px) rotate(0deg);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
