@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="database" method="post">
+        <label for="email">email</label><br />
+        <input type="email" placeholder="examplemail@email.com" /> <br />
+
+        <label for="username">username</label><br />
+        <input type="text" placeholder="username" required /><br />
+
+        <label for="password">password</label><br />
+        <div class="password-wrapper">
+          <input type="password" id="password" placeholder="password" />
+          <button type="button" id="show" onclick="showPass()">Show</button>
+        </div>
+
+        <label for="title">title</label><br />
+        <select name="title" id="text">
+          <option value="Mr.">Mr.</option>
+          <option value="Ms.">Ms.</option>
+          <option value="rather not say">rather not say</option></select
+        ><br />
+
+        <button type="submit">sign up</button><br />
+
+        <p>already have an account <a href="login.html">login</a></p>
+      </form>
+    </div>
+    <script src="showpass.js"></script>
+  </body>
+</html>
