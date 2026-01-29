@@ -1,11 +1,11 @@
-import Header from "./header";
-import Search from "./search";
-import Footer from "./footer";
-import Counter from "./counter";
-import State1 from "./state";
+import Todo from "./todolist";
 
 const App = () => {
-  return <Counter></Counter>;
+  return (
+    <div className="flex flex-col h-screen ">
+      <Todo></Todo>
+    </div>
+  );
 };
 
 export default App;

@@ -4,7 +4,7 @@ const Button = (props) => {
   return (
     <button
       type="submit"
-      className={` text-2xl m-8 border-4 bg-blue-200 text-blue-500 rounded-md hover:bg-blue-900 hover:text-white p-2 hover:rounded-full ${isLarge}`}
+      className={` text-2xl m-8 border-4 bg-blue-200 text-blue-500 rounded-md hover:bg-blue-900 hover:text-white p-2 hover:rounded-full hover:cursor-pointer ${isLarge}`}
     >
       {children}
     </button>
