@@ -1,14 +1,11 @@
 import Header from "./header";
 import Search from "./search";
 import Footer from "./footer";
+import Counter from "./counter";
+import State1 from "./state";
+
 const App = () => {
-  return (
-    <div className="h-screen flex flex-col">
-      <Header></Header>
-      <Search></Search>
-      <Footer></Footer>
-    </div>
-  );
+  return <Counter></Counter>;
 };
 
 export default App;
