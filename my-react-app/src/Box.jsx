@@ -1,11 +1,17 @@
 const Box = (props) => {
-  const { label } = props;
-
-  const isError = false;
-
+  const { label, bgColor, color, large, children, height } = props;
   return (
-    <div className={isError ? "text-red-600" : "text-green-600"}>{label}</div>
+    <div
+      style={{
+        background: bgColor,
+        color: color,
+        fontSize: large ? "40px" : "10px",
+        height: height + "px",
+      }}
+    >
+      <div>{children}</div>
+      {label}
+    </div>
   );
 };
-
 export default Box;

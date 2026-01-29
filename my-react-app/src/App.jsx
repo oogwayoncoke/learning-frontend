@@ -1,12 +1,12 @@
-import { Children } from "react";
-import Box from "./Box";
-import Button from "./Button";
-
+import Header from "./header";
+import Search from "./search";
+import Footer from "./footer";
 const App = () => {
   return (
-    <div>
-      <Button>click me</Button>
-      <Button large>submit</Button>
+    <div className="h-screen flex flex-col">
+      <Header></Header>
+      <Search></Search>
+      <Footer></Footer>
     </div>
   );
 };
